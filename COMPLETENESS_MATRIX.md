@@ -2,20 +2,20 @@
 
 AI Governance Curriculum · Level 25 · [learning](https://github.com/ai-governance-curriculum/ai-risk-engineer-learning) · [solutions](https://github.com/ai-governance-curriculum/ai-risk-engineer-solutions)
 
-_Generated 2026-11-03 by `aicg org completeness`._
+_Generated 2026-11-08 by `aicg org completeness`._
 
-**Overall: 50%**
+**Overall: 54%**
 
 | | Progress | Count |
 |---|---|---|
 | Learning | `██████████` 100% | 12/12 modules complete |
-| Solutions | `░░░░░░░░░░` 0% | 0/65 exercises solved |
+| Solutions | `█░░░░░░░░░` 8% | 5/65 exercises solved |
 
 ## Modules
 
 | Module | Status | Words | Chapters | Exercises | Quiz | Solutions |
 |---|---|---|---|---|---|---|
-| `mod-101-ai-risk-frameworks-and-position` | ✅ Complete | 15,008 | 6 | 5 | — | 0/5 |
+| `mod-101-ai-risk-frameworks-and-position` | ✅ Complete | 15,008 | 6 | 5 | — | 5/5 |
 | `mod-102-harm-modelling-and-risk-taxonomy` | ✅ Complete | 17,843 | 6 | 5 | — | 0/5 |
 | `mod-103-risk-quantification-and-registers` | ✅ Complete | 24,933 | 7 | 5 | — | 0/5 |
 | `mod-104-llm-red-teaming-and-attack-engineering` | ✅ Complete | 28,332 | 6 | 6 | — | 0/6 |
