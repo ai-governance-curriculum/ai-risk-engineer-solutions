@@ -52,25 +52,41 @@ from pyrit.prompt_target import PromptChatTarget  # <!-- verify-at-pin: confirm 
 from pyrit.models import PromptRequestResponse, PromptRequestPiece
 
 class CarePilotTarget(PromptChatTarget):
-    """POSTs to the CarePilot staging proxy at /v1/chat with bearer token."""
+    """POSTs to the CarePilot staging proxy at /v1/chat with bearer token.
+
+    Multi-turn attacks (RedTeamingOrchestrator) require full conversation history
+    on the wire: the CarePilot staging proxy is stateless per-request, so unless
+    the harness forwards prior (user, assistant) turns, follow-up attacks run as
+    independent requests and the attacker can never build on a partial jailbreak.
+    We keep history in-process keyed by PyRIT's `conversation_id` and replay the
+    full message list on every request. The staging proxy also receives the
+    `conversation_id` so audit logs can correlate turns.
+    """
 
     def __init__(self, endpoint: str | None = None, token: str | None = None):
         super().__init__()
         self.endpoint = endpoint or os.environ["CAREPILOT_PROXY_URL"]
         self.token = token or os.environ["CAREPILOT_PROXY_TOKEN"]
         self._client = httpx.Client(timeout=30.0)
+        self._history: dict[str, list[dict]] = {}
 
     async def send_prompt_async(
         self, prompt_request: PromptRequestResponse
     ) -> PromptRequestResponse:
         piece = prompt_request.request_pieces[0]
+        history = self._history.setdefault(piece.conversation_id, [])
+        history.append({"role": "user", "content": piece.converted_value})
         resp = self._client.post(
             f"{self.endpoint}/v1/chat",
             headers={"Authorization": f"Bearer {self.token}"},
-            json={"messages": [{"role": "user", "content": piece.converted_value}]},
+            json={
+                "messages": list(history),            # full prior context, not just this turn
+                "conversation_id": piece.conversation_id,  # staging audit correlation
+            },
         )
         resp.raise_for_status()
         text = resp.json()["choices"][0]["message"]["content"]
+        history.append({"role": "assistant", "content": text})
         return PromptRequestResponse(request_pieces=[
             PromptRequestPiece(role="assistant", original_value=text,
                                conversation_id=piece.conversation_id)
