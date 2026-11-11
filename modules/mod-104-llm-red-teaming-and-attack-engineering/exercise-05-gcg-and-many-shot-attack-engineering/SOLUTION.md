@@ -310,7 +310,7 @@ Mapping to authorities:
 
 ## 5. Common mistakes
 
-- **Assuming the GCG transfer rate without measuring it.** Zou et al. show transfer *can* happen;
+- **Assuming the GCG transfer rate without measuring it.** Zou et al. show transfer _can_ happen;
   they do not promise it will on your model, your defence stack, or today's checkpoint. Transfer
   rate is a measurement, not a citation.
 - **Publishing or logging suffixes outside the research bucket.** Suffixes in Jira tickets, Slack
