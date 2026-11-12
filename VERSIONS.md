@@ -9,3 +9,4 @@
 | 2026-11-11 | `fill-mod-106-fairness-bias-and-explainability-engineering-solutions` | `mod-106-fairness-bias-and-explainability-engineering` | Fill mod-106-fairness-bias-and-explainability-engineering module exercise solutions |
 | 2026-11-11 | `fill-mod-105-adversarial-ml-and-robustness-solutions` | `mod-105-adversarial-ml-and-robustness` | Fill mod-105-adversarial-ml-and-robustness module exercise solutions |
 | 2026-11-11 | `fill-mod-104-llm-red-teaming-and-attack-engineering-solutions` | `mod-104-llm-red-teaming-and-attack-engineering` | Fill mod-104-llm-red-teaming-and-attack-engineering module exercise solutions |
+| 2026-11-12 | `fill-mod-108-guardrail-engineering-and-effectiveness-solutions` | `mod-108-guardrail-engineering-and-effectiveness` | Fill mod-108-guardrail-engineering-and-effectiveness module exercise solutions |
