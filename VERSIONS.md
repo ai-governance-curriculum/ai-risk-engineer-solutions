@@ -10,3 +10,5 @@
 | 2026-11-11 | `fill-mod-105-adversarial-ml-and-robustness-solutions` | `mod-105-adversarial-ml-and-robustness` | Fill mod-105-adversarial-ml-and-robustness module exercise solutions |
 | 2026-11-11 | `fill-mod-104-llm-red-teaming-and-attack-engineering-solutions` | `mod-104-llm-red-teaming-and-attack-engineering` | Fill mod-104-llm-red-teaming-and-attack-engineering module exercise solutions |
 | 2026-11-13 | `fill-mod-111-incident-response-and-postmortems-solutions` | `mod-111-incident-response-and-postmortems` | Fill mod-111-incident-response-and-postmortems module exercise solutions |
+| 2026-11-12 | `fill-mod-110-model-risk-management-and-supply-chain-solutions` | `mod-110-model-risk-management-and-supply-chain` | Fill mod-110-model-risk-management-and-supply-chain module exercise solutions |
+| 2026-11-12 | `fill-mod-108-guardrail-engineering-and-effectiveness-solutions` | `mod-108-guardrail-engineering-and-effectiveness` | Fill mod-108-guardrail-engineering-and-effectiveness module exercise solutions |
