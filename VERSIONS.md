@@ -12,3 +12,4 @@
 | 2026-11-13 | `fill-mod-111-incident-response-and-postmortems-solutions` | `mod-111-incident-response-and-postmortems` | Fill mod-111-incident-response-and-postmortems module exercise solutions |
 | 2026-11-12 | `fill-mod-110-model-risk-management-and-supply-chain-solutions` | `mod-110-model-risk-management-and-supply-chain` | Fill mod-110-model-risk-management-and-supply-chain module exercise solutions |
 | 2026-11-12 | `fill-mod-108-guardrail-engineering-and-effectiveness-solutions` | `mod-108-guardrail-engineering-and-effectiveness` | Fill mod-108-guardrail-engineering-and-effectiveness module exercise solutions |
+| 2026-11-13 | `fill-mod-112-cross-functional-ai-risk-program-and-communication-solutions` | `mod-112-cross-functional-ai-risk-program-and-communication` | Fill mod-112-cross-functional-ai-risk-program-and-communication module exercise solutions |
